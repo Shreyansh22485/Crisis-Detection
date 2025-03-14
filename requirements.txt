@@ -1,0 +1,27 @@
+# Crisis Detection System Requirements
+
+# Core Analysis Libraries
+vaderSentiment>=3.3.2
+textblob>=0.15.3
+nltk>=3.7
+scikit-learn>=1.2.0
+spacy>=3.5.0
+
+# Data Handling
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Reddit API
+praw>=7.7.0
+
+# Geolocation and Mapping
+folium>=0.14.0
+geopy>=2.3.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.13.0
+
+# Optional: Install spaCy model separately with:
+# python -m spacy download en_core_web_sm

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_918645e52d42b90fbd3104a010a3b02f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_918645e52d42b90fbd3104a010a3b02f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_918645e52d42b90fbd3104a010a3b02f = L.map(
+                "map_918645e52d42b90fbd3104a010a3b02f",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bbda60db7c019cb72f323758131c3f76 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bbda60db7c019cb72f323758131c3f76.addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+            var circle_marker_14990311d046d404b757f6379beaa319 = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_793b41015458d17194f766be69d62afb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5951e7667d33890b41b448dd271eac42 = $(`<div id="html_5951e7667d33890b41b448dd271eac42" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Austin<br>     </div>`)[0];
+                popup_793b41015458d17194f766be69d62afb.setContent(html_5951e7667d33890b41b448dd271eac42);
+            
+        
+
+        circle_marker_14990311d046d404b757f6379beaa319.bindPopup(popup_793b41015458d17194f766be69d62afb)
+        ;
+
+        
+    
+    
+            var circle_marker_599eb9b43c7a7cd8f7505fe88dd07270 = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_83552f1767b03dee40657bfb926e2216 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35c4030e2a792862a759f22f235a3ee8 = $(`<div id="html_35c4030e2a792862a759f22f235a3ee8" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Positive<br>     Location: Austin<br>     </div>`)[0];
+                popup_83552f1767b03dee40657bfb926e2216.setContent(html_35c4030e2a792862a759f22f235a3ee8);
+            
+        
+
+        circle_marker_599eb9b43c7a7cd8f7505fe88dd07270.bindPopup(popup_83552f1767b03dee40657bfb926e2216)
+        ;
+
+        
+    
+    
+            var circle_marker_2334b14ca66679936157cdb930372806 = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_134a509bb3d3d26a4b8e3ea0a540d82e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27d5a40eed107da7ce131ab47f877b92 = $(`<div id="html_27d5a40eed107da7ce131ab47f877b92" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Positive<br>     Location: Rome<br>     </div>`)[0];
+                popup_134a509bb3d3d26a4b8e3ea0a540d82e.setContent(html_27d5a40eed107da7ce131ab47f877b92);
+            
+        
+
+        circle_marker_2334b14ca66679936157cdb930372806.bindPopup(popup_134a509bb3d3d26a4b8e3ea0a540d82e)
+        ;
+
+        
+    
+    
+            var circle_marker_ff5a6ddd5fb6e5b800fbf34ae903b4bf = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_e266010a2f2e2d6f52873b90bab6de94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdd35beff6919738394cc6332cdae0c8 = $(`<div id="html_fdd35beff6919738394cc6332cdae0c8" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Austin<br>     </div>`)[0];
+                popup_e266010a2f2e2d6f52873b90bab6de94.setContent(html_fdd35beff6919738394cc6332cdae0c8);
+            
+        
+
+        circle_marker_ff5a6ddd5fb6e5b800fbf34ae903b4bf.bindPopup(popup_e266010a2f2e2d6f52873b90bab6de94)
+        ;
+
+        
+    
+    
+            var circle_marker_f15eaad8d749ef4b0e4f8ce860be8a0f = L.circleMarker(
+                [41.5018224, -84.5923785],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_481a43e606964e14da5beab8c7a21d97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_733c39ca298064d02b107eb53c73ba6d = $(`<div id="html_733c39ca298064d02b107eb53c73ba6d" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Positive<br>     Location: Williams<br>     </div>`)[0];
+                popup_481a43e606964e14da5beab8c7a21d97.setContent(html_733c39ca298064d02b107eb53c73ba6d);
+            
+        
+
+        circle_marker_f15eaad8d749ef4b0e4f8ce860be8a0f.bindPopup(popup_481a43e606964e14da5beab8c7a21d97)
+        ;
+
+        
+    
+    
+            var circle_marker_f82ca81f2c8613021a02c8cee592bf29 = L.circleMarker(
+                [43.6534817, -79.3839347],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_f7cd71f811625f5ffd1ead9ed669a0f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad06a36b78c428cc702b797ea47b2fb9 = $(`<div id="html_ad06a36b78c428cc702b797ea47b2fb9" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Toronto<br>     </div>`)[0];
+                popup_f7cd71f811625f5ffd1ead9ed669a0f1.setContent(html_ad06a36b78c428cc702b797ea47b2fb9);
+            
+        
+
+        circle_marker_f82ca81f2c8613021a02c8cee592bf29.bindPopup(popup_f7cd71f811625f5ffd1ead9ed669a0f1)
+        ;
+
+        
+    
+    
+            var circle_marker_75bd773b7af042566b56cf7be89b45c0 = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_b7f93f00bf6a77122ddd1c1ea465b00a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03adf5915a2529b174540deb1a52c754 = $(`<div id="html_03adf5915a2529b174540deb1a52c754" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Rome<br>     </div>`)[0];
+                popup_b7f93f00bf6a77122ddd1c1ea465b00a.setContent(html_03adf5915a2529b174540deb1a52c754);
+            
+        
+
+        circle_marker_75bd773b7af042566b56cf7be89b45c0.bindPopup(popup_b7f93f00bf6a77122ddd1c1ea465b00a)
+        ;
+
+        
+    
+    
+            var circle_marker_4d707bfb9708686ac0f08474894b3536 = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_366f79bb659bd4aace7abda81d20e07a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fd774931326f6a8f0d4e2ec1b1e9cb3 = $(`<div id="html_7fd774931326f6a8f0d4e2ec1b1e9cb3" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Austin<br>     </div>`)[0];
+                popup_366f79bb659bd4aace7abda81d20e07a.setContent(html_7fd774931326f6a8f0d4e2ec1b1e9cb3);
+            
+        
+
+        circle_marker_4d707bfb9708686ac0f08474894b3536.bindPopup(popup_366f79bb659bd4aace7abda81d20e07a)
+        ;
+
+        
+    
+    
+            var circle_marker_6a55c6e10c44775785ce97cf1b03ecb2 = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_9e3736fe03d69007dc5088c918139734 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd614cf7fcd7f8311ef8350625b66b46 = $(`<div id="html_dd614cf7fcd7f8311ef8350625b66b46" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Austin<br>     </div>`)[0];
+                popup_9e3736fe03d69007dc5088c918139734.setContent(html_dd614cf7fcd7f8311ef8350625b66b46);
+            
+        
+
+        circle_marker_6a55c6e10c44775785ce97cf1b03ecb2.bindPopup(popup_9e3736fe03d69007dc5088c918139734)
+        ;
+
+        
+    
+    
+            var circle_marker_801080eaaf386c68a008f90153987927 = L.circleMarker(
+                [19.4326296, -99.1331785],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_8fe21f3d60e52f9a2a0c21cc7029d89d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa29ed1d42011d82e6479f3f8fe2f219 = $(`<div id="html_aa29ed1d42011d82e6479f3f8fe2f219" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Mexico City<br>     </div>`)[0];
+                popup_8fe21f3d60e52f9a2a0c21cc7029d89d.setContent(html_aa29ed1d42011d82e6479f3f8fe2f219);
+            
+        
+
+        circle_marker_801080eaaf386c68a008f90153987927.bindPopup(popup_8fe21f3d60e52f9a2a0c21cc7029d89d)
+        ;
+
+        
+    
+    
+            var circle_marker_4bb757541e3db927afd1fe3041151533 = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_3b01b12e9e03613b5b739de570d987a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_722ce071585a9473b356be835f0f521d = $(`<div id="html_722ce071585a9473b356be835f0f521d" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Rome<br>     </div>`)[0];
+                popup_3b01b12e9e03613b5b739de570d987a9.setContent(html_722ce071585a9473b356be835f0f521d);
+            
+        
+
+        circle_marker_4bb757541e3db927afd1fe3041151533.bindPopup(popup_3b01b12e9e03613b5b739de570d987a9)
+        ;
+
+        
+    
+    
+            var circle_marker_721d4628193ab457d466572e201f61af = L.circleMarker(
+                [9.9742773, -84.4252654],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_49ccac02b0764fe811ebb78475030b61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f9c2e1ec17f0a50adedb825d08faecd = $(`<div id="html_0f9c2e1ec17f0a50adedb825d08faecd" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Jesus<br>     </div>`)[0];
+                popup_49ccac02b0764fe811ebb78475030b61.setContent(html_0f9c2e1ec17f0a50adedb825d08faecd);
+            
+        
+
+        circle_marker_721d4628193ab457d466572e201f61af.bindPopup(popup_49ccac02b0764fe811ebb78475030b61)
+        ;
+
+        
+    
+    
+            var circle_marker_9f73b96f6656a1ab3d3e895fc36de864 = L.circleMarker(
+                [-41.5000831, 172.8344077],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_9188c7e764d0837c4b65d43093b325b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dafd9c6e32a7250b419434e20718fcaf = $(`<div id="html_dafd9c6e32a7250b419434e20718fcaf" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: New Zealand<br>     </div>`)[0];
+                popup_9188c7e764d0837c4b65d43093b325b0.setContent(html_dafd9c6e32a7250b419434e20718fcaf);
+            
+        
+
+        circle_marker_9f73b96f6656a1ab3d3e895fc36de864.bindPopup(popup_9188c7e764d0837c4b65d43093b325b0)
+        ;
+
+        
+    
+    
+            var circle_marker_ad2f94d2dd47815ae6015c6c42accccf = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_a0d9e5417c19ea6c5abe549596118545 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e7aea391c5423338f7faf4d28314f78 = $(`<div id="html_3e7aea391c5423338f7faf4d28314f78" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: America<br>     </div>`)[0];
+                popup_a0d9e5417c19ea6c5abe549596118545.setContent(html_3e7aea391c5423338f7faf4d28314f78);
+            
+        
+
+        circle_marker_ad2f94d2dd47815ae6015c6c42accccf.bindPopup(popup_a0d9e5417c19ea6c5abe549596118545)
+        ;
+
+        
+    
+    
+            var circle_marker_19c68f333439a575e68cb9390a51c28e = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_785b6a7a271b0ffd8d553665adc1e4cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7dbbc3e4148a10650fb5192f50e6407 = $(`<div id="html_b7dbbc3e4148a10650fb5192f50e6407" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Austin<br>     </div>`)[0];
+                popup_785b6a7a271b0ffd8d553665adc1e4cb.setContent(html_b7dbbc3e4148a10650fb5192f50e6407);
+            
+        
+
+        circle_marker_19c68f333439a575e68cb9390a51c28e.bindPopup(popup_785b6a7a271b0ffd8d553665adc1e4cb)
+        ;
+
+        
+    
+    
+            var circle_marker_cb4fa14c9acd2c8933a18a2cb884ce7a = L.circleMarker(
+                [48.8588897, 2.3200410217200766],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_086173a5ea39079308070123aab52634 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_beaf84c89a0024eb1122c1ca55255ab1 = $(`<div id="html_beaf84c89a0024eb1122c1ca55255ab1" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Positive<br>     Location: Paris<br>     </div>`)[0];
+                popup_086173a5ea39079308070123aab52634.setContent(html_beaf84c89a0024eb1122c1ca55255ab1);
+            
+        
+
+        circle_marker_cb4fa14c9acd2c8933a18a2cb884ce7a.bindPopup(popup_086173a5ea39079308070123aab52634)
+        ;
+
+        
+    
+    
+            var circle_marker_e217014c7c284678b1f8e1d421012492 = L.circleMarker(
+                [-12.0621065, -77.0365256],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_cd2fb7026ce9b0869af81d555792516a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_571d40c116d4f5ebae03c60f7e75865b = $(`<div id="html_571d40c116d4f5ebae03c60f7e75865b" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Lima<br>     </div>`)[0];
+                popup_cd2fb7026ce9b0869af81d555792516a.setContent(html_571d40c116d4f5ebae03c60f7e75865b);
+            
+        
+
+        circle_marker_e217014c7c284678b1f8e1d421012492.bindPopup(popup_cd2fb7026ce9b0869af81d555792516a)
+        ;
+
+        
+    
+    
+            var circle_marker_d5adf19f0d415f25e5f7555a7326ae5a = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_18657c6d78afb5d2de6030114f6db6bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3383d7ce9996bdc0c2240c197d51be96 = $(`<div id="html_3383d7ce9996bdc0c2240c197d51be96" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Positive<br>     Location: Rome<br>     </div>`)[0];
+                popup_18657c6d78afb5d2de6030114f6db6bc.setContent(html_3383d7ce9996bdc0c2240c197d51be96);
+            
+        
+
+        circle_marker_d5adf19f0d415f25e5f7555a7326ae5a.bindPopup(popup_18657c6d78afb5d2de6030114f6db6bc)
+        ;
+
+        
+    
+    
+            var circle_marker_f92a794252b6af71ef575025921f59de = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_46cce467ff6d9c60cd0ff33c1546b44f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce0ec4c5ed586d060303b38daa52c5a0 = $(`<div id="html_ce0ec4c5ed586d060303b38daa52c5a0" style="width: 100.0%; height: 100.0%;">     Risk Level: Low Concern<br>     Sentiment: Negative<br>     Location: Austin<br>     </div>`)[0];
+                popup_46cce467ff6d9c60cd0ff33c1546b44f.setContent(html_ce0ec4c5ed586d060303b38daa52c5a0);
+            
+        
+
+        circle_marker_f92a794252b6af71ef575025921f59de.bindPopup(popup_46cce467ff6d9c60cd0ff33c1546b44f)
+        ;
+
+        
+    
+    
+            var circle_marker_19dd94629fa34f0d8583488a43f5e1a4 = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_31e629c26a71e1e704a61915c7ec65a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5adc3a84e57b09ad40aee8adfee4dda = $(`<div id="html_f5adc3a84e57b09ad40aee8adfee4dda" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Austin<br>     </div>`)[0];
+                popup_31e629c26a71e1e704a61915c7ec65a8.setContent(html_f5adc3a84e57b09ad40aee8adfee4dda);
+            
+        
+
+        circle_marker_19dd94629fa34f0d8583488a43f5e1a4.bindPopup(popup_31e629c26a71e1e704a61915c7ec65a8)
+        ;
+
+        
+    
+    
+            var circle_marker_4b5fd8e75bed5933f7d9e251eb8d0fd3 = L.circleMarker(
+                [45.5031824, -73.5698065],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_78e1265c0c93a3319eaf03fc20a80b54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_948dca4a8250f798bb08eded55bbf51a = $(`<div id="html_948dca4a8250f798bb08eded55bbf51a" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Montreal<br>     </div>`)[0];
+                popup_78e1265c0c93a3319eaf03fc20a80b54.setContent(html_948dca4a8250f798bb08eded55bbf51a);
+            
+        
+
+        circle_marker_4b5fd8e75bed5933f7d9e251eb8d0fd3.bindPopup(popup_78e1265c0c93a3319eaf03fc20a80b54)
+        ;
+
+        
+    
+    
+            var circle_marker_a2c3eb1ae9cb13cf468b8620b695eea1 = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_c619a45bb00aefa922259b7d10dd9cd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd0115a9bda717b4de7176ec06ad0595 = $(`<div id="html_cd0115a9bda717b4de7176ec06ad0595" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Austin<br>     </div>`)[0];
+                popup_c619a45bb00aefa922259b7d10dd9cd7.setContent(html_cd0115a9bda717b4de7176ec06ad0595);
+            
+        
+
+        circle_marker_a2c3eb1ae9cb13cf468b8620b695eea1.bindPopup(popup_c619a45bb00aefa922259b7d10dd9cd7)
+        ;
+
+        
+    
+    
+            var circle_marker_6e3d780b566b21f592620a29ef280a67 = L.circleMarker(
+                [43.6211955, -84.6824346],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_f4adaead4471e9c76255adcb6572202e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_697c34c176cf359ba43e9697902c43c6 = $(`<div id="html_697c34c176cf359ba43e9697902c43c6" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Positive<br>     Location: Michigan<br>     </div>`)[0];
+                popup_f4adaead4471e9c76255adcb6572202e.setContent(html_697c34c176cf359ba43e9697902c43c6);
+            
+        
+
+        circle_marker_6e3d780b566b21f592620a29ef280a67.bindPopup(popup_f4adaead4471e9c76255adcb6572202e)
+        ;
+
+        
+    
+    
+            var circle_marker_6467b30f02cf64d9a503629d42ef05f6 = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_23e789c637e825b3aa0385f4ff362c08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6425a860d1f480bab200e3e2a42ec61 = $(`<div id="html_c6425a860d1f480bab200e3e2a42ec61" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Rome<br>     </div>`)[0];
+                popup_23e789c637e825b3aa0385f4ff362c08.setContent(html_c6425a860d1f480bab200e3e2a42ec61);
+            
+        
+
+        circle_marker_6467b30f02cf64d9a503629d42ef05f6.bindPopup(popup_23e789c637e825b3aa0385f4ff362c08)
+        ;
+
+        
+    
+    
+            var circle_marker_dcaff05f8cb4c7fcf65eb991b3312570 = L.circleMarker(
+                [6.84835835, -5.155897399653273],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_75dddbe53b8009b6acdd4f2c99c757bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cfcc76cd70597c1a7f9c2a60221a020 = $(`<div id="html_7cfcc76cd70597c1a7f9c2a60221a020" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Feb<br>     </div>`)[0];
+                popup_75dddbe53b8009b6acdd4f2c99c757bb.setContent(html_7cfcc76cd70597c1a7f9c2a60221a020);
+            
+        
+
+        circle_marker_dcaff05f8cb4c7fcf65eb991b3312570.bindPopup(popup_75dddbe53b8009b6acdd4f2c99c757bb)
+        ;
+
+        
+    
+    
+            var circle_marker_b0dbde08aeb00f70394a9cf44f64c55d = L.circleMarker(
+                [51.5131907, -0.3031169],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_8cb1c12aa7667a5dc4eef8858169f43e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc54a981ea253073363dd8a87956e1f5 = $(`<div id="html_cc54a981ea253073363dd8a87956e1f5" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Therapie<br>     </div>`)[0];
+                popup_8cb1c12aa7667a5dc4eef8858169f43e.setContent(html_cc54a981ea253073363dd8a87956e1f5);
+            
+        
+
+        circle_marker_b0dbde08aeb00f70394a9cf44f64c55d.bindPopup(popup_8cb1c12aa7667a5dc4eef8858169f43e)
+        ;
+
+        
+    
+    
+            var circle_marker_e88ba1ddf5d21aecc5bd5c54e8ea2dc7 = L.circleMarker(
+                [51.6468185, 5.0535335],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_66468f9cd33625a1e77c69182505efb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0bb5c0164824e77b183914624164224 = $(`<div id="html_d0bb5c0164824e77b183914624164224" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Python<br>     </div>`)[0];
+                popup_66468f9cd33625a1e77c69182505efb1.setContent(html_d0bb5c0164824e77b183914624164224);
+            
+        
+
+        circle_marker_e88ba1ddf5d21aecc5bd5c54e8ea2dc7.bindPopup(popup_66468f9cd33625a1e77c69182505efb1)
+        ;
+
+        
+    
+    
+            var circle_marker_00d8041496cda081a003215cf3c32113 = L.circleMarker(
+                [28.520462000000002, -80.99779866448843],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_def31cfae0d05d5044f56c9bbc83bd41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_476b762cd2b6d9816f258349a06e9836 = $(`<div id="html_476b762cd2b6d9816f258349a06e9836" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Christmas<br>     </div>`)[0];
+                popup_def31cfae0d05d5044f56c9bbc83bd41.setContent(html_476b762cd2b6d9816f258349a06e9836);
+            
+        
+
+        circle_marker_00d8041496cda081a003215cf3c32113.bindPopup(popup_def31cfae0d05d5044f56c9bbc83bd41)
+        ;
+
+        
+    
+    
+            var circle_marker_6af66bfb5e6c624683d796b18e76e16a = L.circleMarker(
+                [30.2711286, -97.7436995],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_de0ad48ac0ff5f464440d93038a6cb64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03913cb7ed25aa28651ea0ce5b8ac89f = $(`<div id="html_03913cb7ed25aa28651ea0ce5b8ac89f" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Austin<br>     </div>`)[0];
+                popup_de0ad48ac0ff5f464440d93038a6cb64.setContent(html_03913cb7ed25aa28651ea0ce5b8ac89f);
+            
+        
+
+        circle_marker_6af66bfb5e6c624683d796b18e76e16a.bindPopup(popup_de0ad48ac0ff5f464440d93038a6cb64)
+        ;
+
+        
+    
+    
+            var circle_marker_e6cdeb116adb3042205aa85cacd17924 = L.circleMarker(
+                [-12.0621065, -77.0365256],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_237932ccd75ad53f89ab63be29093802 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbf63ebf561f20c479cb31bccba5ab7c = $(`<div id="html_dbf63ebf561f20c479cb31bccba5ab7c" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Positive<br>     Location: Lima<br>     </div>`)[0];
+                popup_237932ccd75ad53f89ab63be29093802.setContent(html_dbf63ebf561f20c479cb31bccba5ab7c);
+            
+        
+
+        circle_marker_e6cdeb116adb3042205aa85cacd17924.bindPopup(popup_237932ccd75ad53f89ab63be29093802)
+        ;
+
+        
+    
+    
+            var circle_marker_7ee115e9e4857db52455da9f3929a656 = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_ac852a086aad1c22c42230636a1dcd6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_493bcd982df89ddc450f4b54a006b8af = $(`<div id="html_493bcd982df89ddc450f4b54a006b8af" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Rome<br>     </div>`)[0];
+                popup_ac852a086aad1c22c42230636a1dcd6e.setContent(html_493bcd982df89ddc450f4b54a006b8af);
+            
+        
+
+        circle_marker_7ee115e9e4857db52455da9f3929a656.bindPopup(popup_ac852a086aad1c22c42230636a1dcd6e)
+        ;
+
+        
+    
+    
+            var circle_marker_e72b791deb0401e59892e1223dadad01 = L.circleMarker(
+                [35.6768601, 139.7638947],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_dd4df746ea17304b71af65dadc4ea18b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2658fbac88aaf5ee691c19ffcc310ac4 = $(`<div id="html_2658fbac88aaf5ee691c19ffcc310ac4" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Tokyo<br>     </div>`)[0];
+                popup_dd4df746ea17304b71af65dadc4ea18b.setContent(html_2658fbac88aaf5ee691c19ffcc310ac4);
+            
+        
+
+        circle_marker_e72b791deb0401e59892e1223dadad01.bindPopup(popup_dd4df746ea17304b71af65dadc4ea18b)
+        ;
+
+        
+    
+    
+            var circle_marker_619cfe8aa9e9e41371bc009c6ab6c5b2 = L.circleMarker(
+                [24.4769288, 90.2934413],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_6b05ab253672911f214d44196bde64cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3844dd25f2a02674dc7943083d395b6 = $(`<div id="html_e3844dd25f2a02674dc7943083d395b6" style="width: 100.0%; height: 100.0%;">     Risk Level: Moderate Concern<br>     Sentiment: Negative<br>     Location: Bangladesh<br>     </div>`)[0];
+                popup_6b05ab253672911f214d44196bde64cf.setContent(html_e3844dd25f2a02674dc7943083d395b6);
+            
+        
+
+        circle_marker_619cfe8aa9e9e41371bc009c6ab6c5b2.bindPopup(popup_6b05ab253672911f214d44196bde64cf)
+        ;
+
+        
+    
+    
+            var circle_marker_fff303671f995ff2c3ec550f14fe2b5c = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_7cb44209f7055bfc267aafcdf13ea7dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87fc5cf3ed03d6806839fcf6ac327938 = $(`<div id="html_87fc5cf3ed03d6806839fcf6ac327938" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Negative<br>     Location: Rome<br>     </div>`)[0];
+                popup_7cb44209f7055bfc267aafcdf13ea7dc.setContent(html_87fc5cf3ed03d6806839fcf6ac327938);
+            
+        
+
+        circle_marker_fff303671f995ff2c3ec550f14fe2b5c.bindPopup(popup_7cb44209f7055bfc267aafcdf13ea7dc)
+        ;
+
+        
+    
+    
+            var circle_marker_2dc1d1927d467dcac0a50d724bf38f39 = L.circleMarker(
+                [45.8742767, 5.9598575],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+    
+        var popup_7e351640743aab55e2518f4515c3d133 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cccc5d44b3bb6cb580b1277dadb270e0 = $(`<div id="html_cccc5d44b3bb6cb580b1277dadb270e0" style="width: 100.0%; height: 100.0%;">     Risk Level: High Risk<br>     Sentiment: Positive<br>     Location: Sales<br>     </div>`)[0];
+                popup_7e351640743aab55e2518f4515c3d133.setContent(html_cccc5d44b3bb6cb580b1277dadb270e0);
+            
+        
+
+        circle_marker_2dc1d1927d467dcac0a50d724bf38f39.bindPopup(popup_7e351640743aab55e2518f4515c3d133)
+        ;
+
+        
+    
+    
+            var heat_map_6904b6c3266613e4a6cbf28aea435f64 = L.heatLayer(
+                [[30.2711286, -97.7436995], [30.2711286, -97.7436995], [41.8933203, 12.4829321], [30.2711286, -97.7436995], [41.5018224, -84.5923785], [43.6534817, -79.3839347], [41.8933203, 12.4829321], [30.2711286, -97.7436995], [30.2711286, -97.7436995], [19.4326296, -99.1331785], [41.8933203, 12.4829321], [9.9742773, -84.4252654], [-41.5000831, 172.8344077], [39.7837304, -100.445882], [30.2711286, -97.7436995], [48.8588897, 2.3200410217200766], [-12.0621065, -77.0365256], [41.8933203, 12.4829321], [30.2711286, -97.7436995], [30.2711286, -97.7436995], [45.5031824, -73.5698065], [30.2711286, -97.7436995], [43.6211955, -84.6824346], [41.8933203, 12.4829321], [6.84835835, -5.155897399653273], [51.5131907, -0.3031169], [51.6468185, 5.0535335], [28.520462000000002, -80.99779866448843], [30.2711286, -97.7436995], [-12.0621065, -77.0365256], [41.8933203, 12.4829321], [35.6768601, 139.7638947], [24.4769288, 90.2934413], [41.8933203, 12.4829321], [45.8742767, 5.9598575]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_6904b6c3266613e4a6cbf28aea435f64.addTo(map_918645e52d42b90fbd3104a010a3b02f);
+        
+</script>
+</html>
