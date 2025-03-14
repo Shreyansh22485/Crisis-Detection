@@ -77,7 +77,7 @@ Visualizations in the notebook include bar plots for both sentiment and risk dis
 
 3. **Open the Notebook:**
 
-   Open `try.ipynb` in Visual Studio Code or your preferred Jupyter environment.
+   Open `task.ipynb` in Visual Studio Code or your preferred Jupyter environment.
 
 4. **Run the Notebook:**
 
